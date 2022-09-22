@@ -9,7 +9,7 @@ def system_arg(argv):
             print("{:d} argument:".format(n - 1))
             print("{:d}: {:s}".format((n - 1), argv[1]))
         else:
-            print("{:d} arguments:".format(n))
+            print("{:d} arguments:".format(n - 1))
             for i in range(0, n):
                 if i != 0:
                     print("{:d}: {:s}".format(i, argv[i]))
