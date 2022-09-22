@@ -3,8 +3,12 @@ def argx_print(argv):
     n = len(argv) - 1
     if n == 0:
         print("{:d} arguments.".format(n))
-    elif n > 1:
-        print("{:d} arguments:".format(n))
+        return
+    else:
+        if n == 1:
+            print("{:d} argument:".format(n))
+        else:
+            print("{:d} arguments:".format(n))
         i = 1
         while i <= n:
             print("{:d}: {:s}".format(i, argv[i]))
