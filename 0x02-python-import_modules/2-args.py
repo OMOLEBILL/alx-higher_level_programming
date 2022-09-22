@@ -7,7 +7,7 @@ if __name__ == "__main__":
     elif n == 2:
         print("{:d} argument.".format(n - 1))
     elif n > 1:
-        print("{:d} arguments:".format(n -1))
+        print("{:d} arguments:".format(n - 1))
         for i in range(0, n):
             if i != 0:
                 print("{:d}: {:s}".format(i, sys.argv[i]))
