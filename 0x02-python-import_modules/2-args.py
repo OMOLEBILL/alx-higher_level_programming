@@ -8,7 +8,7 @@ def print_arg(argv):
             print("{:d} argument:".format(n))
         else:
             print("{:d} arguments:".format(n))
-            for i in range(0, n)
+            for i in range(0, n):
                 if i != 0:
                     print("{:d}: {:s}".format(i, argv[i]))
 if __name__ == "__main__":
