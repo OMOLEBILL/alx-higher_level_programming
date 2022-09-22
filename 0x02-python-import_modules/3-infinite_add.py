@@ -10,5 +10,5 @@ def add_sys(argv):
 
 
 if __name__ == "__main__":
-    import sy
+    import sys
     add_sys(sys.argv)
