@@ -13,6 +13,8 @@ def system_arg(argv):
             for i in range(0, n):
                 if i != 0:
                     print("{:d}: {:s}".format(i, argv[i]))
+
+
 if __name__ == "__main__":
     import sys
     system_arg(sys.argv)
