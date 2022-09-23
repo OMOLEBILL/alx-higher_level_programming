@@ -1,6 +1,7 @@
-
+#!/usr/bin/python3
 from calculator_1 import add, div, mul, sub
- 
+
+
 def calc(argv):
     n = len(argv) - 1
     a = int(argv[1])
@@ -9,7 +10,7 @@ def calc(argv):
     if n != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
-    if c == "*" : 
+    if c == "*":
         print("{:d} {:s} {:d} = {:d}".format(a, c, b, mul(a, b)))
     elif c == "+":
         print("{:d} {:s} {:d} = {:d}".format(a, c, b, add(a, b)))
@@ -20,7 +21,8 @@ def calc(argv):
     else:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
-        
-if __name__  == "__main__":
+
+
+if __name__ == "__main__":
     import sys
     calc(sys.argv)
