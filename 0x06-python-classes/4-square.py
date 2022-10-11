@@ -13,7 +13,7 @@ class Square:
         """ args:
                  size
         """
-        self.__size = size
+        self.size = size
 
     """
     reutns size
@@ -31,14 +31,17 @@ class Square:
     """
 
     @size.setter
-    def size(self, value):
+    def size(self, size):
         """
         Raises an exception if the contions are not met
+        args:
+             size
         """
-        if type(value) != int:
+        if type(size) != int:
             raise TypeError("size must be an integer")
-        if value < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
+        self.__size = size
 
     """
     Returns area
