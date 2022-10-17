@@ -72,6 +72,5 @@ class Rectangle():
         """method: __repr__
            return : a nice string representation
         """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
-        s = "Rectangle(" + str(self.width) + "," + str(self.height) + ")"
-        return s
