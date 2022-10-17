@@ -73,4 +73,3 @@ class Rectangle():
            return : a nice string representation
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
-
