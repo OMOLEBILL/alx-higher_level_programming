@@ -68,11 +68,11 @@ class Rectangle():
         s = "\n".join(z)
         return s
 
-    """def __repr__(self):
+    def __repr__(self):
         """method: __repr__
            return : a nice string representation
         """
 
         s = "Rectangle(" + str(self.__width) + ","
         s += str(self.__height) + ")"
-        return s"""
+        return s
