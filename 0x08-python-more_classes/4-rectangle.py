@@ -61,10 +61,11 @@ class Rectangle():
         """
         s = ""
         z = []
-        if self.__width != 0 and self.__height != 0:
-            for i in range(self.__height):
-                z.append("#" * self.__width)
-            s = "\n".join(z)
+        if self.__width == 0 or self.__height == 0:
+            return s
+        for i in range(self.__height):
+            z.append("#" * self.__width)
+        s = "\n".join(z)
         return s
 
     def __repr__(self):
