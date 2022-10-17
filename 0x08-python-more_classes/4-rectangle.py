@@ -73,6 +73,6 @@ class Rectangle():
            return : a nice string representation
         """
 
-        s = "Rectangle(" + str(self.__width) + "*"
+        s = "Rectangle(" + str(self.__width) + ","
         s += str(self.__height) + ")"
         return s
