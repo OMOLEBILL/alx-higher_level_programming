@@ -29,6 +29,7 @@ class Rectangle(BaseGeometry):
         """initiliazes the instance
         """
         super().integer_validator("width", width)
-        super().integer_validator("height", height)
         self.__width = width
+        
+        super().integer_validator("height", height)
         self.__height = height
