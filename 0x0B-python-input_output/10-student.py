@@ -13,7 +13,7 @@ class Student():
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
+    def to_json(self, attrs=None):
         """dict of class
         """
         z = {}
@@ -22,4 +22,4 @@ class Student():
                 if i in self.__dict__:
                     z.update({i: self.__dict__[i]})
             return z
-        return self.__dict__.copy()
+        return self.__dict__
