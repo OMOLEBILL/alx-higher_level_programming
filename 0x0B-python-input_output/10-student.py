@@ -22,4 +22,4 @@ class Student():
                 if i in self.__dict__:
                     z.update({i: self.__dict__[i]})
             return z
-        return self.__dict__
+        return self.__dict__.copy()
