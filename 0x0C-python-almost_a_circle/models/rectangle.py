@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from base import Base
+from models.base import Base
 """We get the base class from the modules base
 """
 
