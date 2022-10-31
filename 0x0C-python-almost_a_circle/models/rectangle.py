@@ -105,10 +105,16 @@ class Rectangle(Base):
                                                        self.width,
                                                        self.height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ adds the args
         """
         arg_list = ['id', '_Rectangle__width', '_Rectangle__height',
                     '_Rectangle__x', '_Rectangle__y']
+        arg_dict = {'id': 'id', 'width': '_Rectangle__width',
+                    'height': '_Rectangle__height',
+                    'x': '_Rectangle__x', 'y': '_Rectangle__y'}
         for id, el in enumerate(args):
             self.__dict__[arg_list[id]] = el
+        if len(args) == 0:
+            for key, val in kwargs.items():
+                self.__dict__[arg_dict[key]] = val
