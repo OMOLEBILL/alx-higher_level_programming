@@ -118,3 +118,9 @@ class Rectangle(Base):
         if len(args) == 0:
             for key, val in kwargs.items():
                 self.__dict__[arg_dict[key]] = val
+
+    def to_dictionary(self):
+        """ returns a dictionary
+        """
+        return {"id": self.id, "width": self.width, "height": self.height,
+                "x": self.x, "y": self.y}
