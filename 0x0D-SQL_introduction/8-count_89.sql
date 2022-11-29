@@ -1,2 +1,2 @@
 -- counts the ovvuranceof an id
-SELECT COUNT(id) from first_table WHERE id = 89;
+SELECT COUNT(id) FROM first_table WHERE id = 89;
