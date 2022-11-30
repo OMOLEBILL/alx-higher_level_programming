@@ -1,6 +1,5 @@
 -- grouping counts
 SELECT score, name
 FROM second_table
-GROUP BY score
-HAVING score > 0
+WHERE name IS NOT NULL
 ORDER BY score DESC;
