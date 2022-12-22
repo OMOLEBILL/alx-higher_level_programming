@@ -15,4 +15,4 @@ if __name__ == "__main__":
     for rows in query_rows:
         print(rows)
     cur.close()
-    con.close(i)
+    con.close()
