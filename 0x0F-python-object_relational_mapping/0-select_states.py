@@ -4,7 +4,7 @@
 import MySQLdb
 from sys import argv
 
-""" listing states from a data base """  
+""" listing states from a data base """
 
 if __name__ == "__main__":
     con = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
@@ -15,4 +15,4 @@ if __name__ == "__main__":
     for rows in query_rows:
         print(rows)
     cur.close()
-    con.close()
+    con.close(i)
