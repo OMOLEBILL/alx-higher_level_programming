@@ -16,6 +16,7 @@ if __name__ == "__main__":
             "'{:s}' ORDER BY id ASC".format(argv[4]))
     query_rows = cur.fetchall()
     for rows in query_rows:
-        print(rows)
+        if rows[1] == argv[4]:
+            print(rows)
     cur.close()
     con.close()
