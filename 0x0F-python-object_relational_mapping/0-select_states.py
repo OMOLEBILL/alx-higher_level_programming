@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" this scripts list the states name"""
 
 
 import MySQLdb
