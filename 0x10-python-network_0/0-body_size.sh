@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #check content length
 
 # Get the URL from the first command line argument
