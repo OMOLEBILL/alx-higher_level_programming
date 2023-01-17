@@ -7,5 +7,4 @@ if __name__ == "__main__":
     import sys
 
     data = requests.get(sys.argv[1])
-    if data.status_code == 200:
-        print(data.headers["X-Request-Id"])
+    print(data.headers["X-Request-Id"])
