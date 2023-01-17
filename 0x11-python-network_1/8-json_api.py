@@ -11,7 +11,8 @@ if __name__ == "__main__":
     data = requests.post(url, json={"q": q})
     try:
         cont = data.json()
-        if not cont:
+        id, name = cont.get('id'), cont.get('name')
+        if len(cont) == 0 or not id or not name:
             print("No result")
         else:
             print("[{}] {}".format(cont.get("id"), cont.get("name")))
