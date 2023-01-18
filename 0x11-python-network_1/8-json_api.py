@@ -8,11 +8,10 @@ if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
 
     q = argv[1] if len(argv) == 2 else ""
-    data = requests.post(url, json={"q": q})
+    data = requests.post(url, data={"q": q})
     try:
         cont = data.json()
-        id, name = cont.get('id'), cont.get('name')
-        if len(cont) == 0 or not id or not name:
+        if len(cont) == 0:
             print("No result")
         else:
             print("[{}] {}".format(cont.get("id"), cont.get("name")))
