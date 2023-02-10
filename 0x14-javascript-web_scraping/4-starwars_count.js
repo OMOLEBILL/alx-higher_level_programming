@@ -2,7 +2,6 @@
 const request = require('request');
 
 const API_URL = process.argv[2];
-const CHARACTER_ID = 18;
 
 request(API_URL, { json: true }, (err, res, body) => {
   if (err) {
@@ -13,9 +12,9 @@ request(API_URL, { json: true }, (err, res, body) => {
   const movies = body.results;
   let length = 0;
   movies.forEach(movie => movie.characters.forEach(charUrl => {
-      if (charUrl.slice(-3, -1) === '18') {
-        length++;
-      }
-      }));
+    if (charUrl.slice(-3, -1) === '18') {
+      length++;
+    }
+  }));
   console.log(length);
 });
