@@ -10,6 +10,12 @@ request(API_URL, { json: true }, (err, res, body) => {
     return;
   }
 
-  const movies = body.results.filter(film => film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${CHARACTER_ID}/`));
-  console.log(movies.length);
+  const movies = body.results;
+  let length = 0;
+  movies.forEach(movie => movie.characters.forEach(charUrl => {
+      if (charUrl.slice(-3, -1) === '18') {
+        length++;
+      }
+      }));
+  console.log(length);
 });
